@@ -17,8 +17,17 @@ export OPENAI_API_KEY=YOUR_AZURE_OPENAI_API_KEY
 The code has been tested with Python 3.9.13 using CentOS Linux release 7.9.2009 (Core). Please install the required Python packages by:
 
 ```bash
+conda create -n trialGPT python=3.9.13 -y
+conda activate trialGPT
+conda install -c pytorch faiss-cpu=1.8.0 -y
 pip install -r requirements.txt
 ```
+
+To check the installation run:
+```bash
+python -c "import importlib.util; spec = importlib.util.find_spec('faiss'); print(spec.loader.load_module().__version__ if spec is not None else 'Not installed')"
+```
+The output should be `1.8.0`.
 
 ## Datasets
 
