@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/agustinlopez/Repositories/TrialGPT/trialgpt_matching/run_matching.py", line 12, in <module>
+    dataset = json.load(open(f"dataset/{corpus}/retrieved_trials.json"))
+FileNotFoundError: [Errno 2] No such file or directory: 'dataset/metabase/retrieved_trials.json'
